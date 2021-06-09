@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exchange_rate">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".exchange_rate">
+
+
+
+        <TextView
+            android:id="@+id/txtDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курс доллара"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/jsonDollar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <TextView
+            android:id="@+id/jsonDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/txtDollar"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEuro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <TextView
+            android:id="@+id/txtEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курс евро"
+            app:layout_constraintTop_toTopOf="@+id/jsonDollar"
+            app:layout_constraintBottom_toBottomOf="@+id/jsonEuro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="276dp" />
+
+        <TextView
+            android:id="@+id/jsonEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/txtEuro"
+            app:layout_constraintBottom_toBottomOf="@+id/txtRub"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <TextView
+            android:id="@+id/txtRub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курс рубля"
+            app:layout_constraintTop_toTopOf="@+id/jsonEuro"
+            app:layout_constraintBottom_toBottomOf="@+id/jsonRub"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="477dp" />
+
+        <TextView
+            android:id="@+id/jsonRub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="@+id/txtRub"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="622dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
